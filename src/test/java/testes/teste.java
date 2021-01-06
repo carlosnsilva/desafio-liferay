@@ -10,7 +10,6 @@ public class teste {
 
     private formPage paginaFormulario;
 
-
     @BeforeEach
     public void beforeEach(){
         this.paginaFormulario = new formPage();
