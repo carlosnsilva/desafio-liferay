@@ -117,4 +117,76 @@ public class formSteps {
 
     }
 
+    //Cenario 5
+    @Given("Dado data, testes corretos e nome vazio")
+    public void dado_data_testes_corretos_e_nome_vazio() {
+        this.pageForm.iniciar();
+    }
+
+    @When("Quando sao preenchidos os campos validos")
+    public void quando_sao_preenchidos_os_campos_validos() {
+        String nome = "";
+        String data = formataData(new Date(),"DD/MM/YYYY");
+        String campoTesting = "Por ser uma área incrivel.";
+
+        pageForm.preencherFormulario(nome, data,campoTesting);
+        aguardar(3000);
+
+
+    }
+
+    //Cenario 6
+    @Given("Dado nome correto e testes, data vazios")
+    public void dado_nome_correto_e_testes_data_vazios() {
+        this.pageForm.iniciar();
+    }
+
+    @When("Quando o campo nome e preenchido correto")
+    public void quando_o_campo_nome_e_preenchido_correto() {
+        String nome = "Usuario_Teste";
+        String data = "";
+        String campoTesting = "";
+
+        pageForm.preencherFormulario(nome, data,campoTesting);
+        aguardar(3000);
+
+
+    }
+
+    //Cenario 7
+    @Given("Dado data correto e testes, nome vazios")
+    public void dado_data_correto_e_testes_nome_vazios() {
+        this.pageForm.iniciar();
+    }
+
+    @When("Quando o campo data e preenchido correto")
+    public void quando_o_campo_data_e_preenchido_correto() {
+        String nome = "";
+        String data = formataData(new Date(),"DD/MM/YYYY");
+        String campoTesting = "";
+
+        pageForm.preencherFormulario(nome, data,campoTesting);
+        aguardar(3000);
+
+
+    }
+
+    //Cenario 8
+    @Given("Dado testes correto e data, nome vazios")
+    public void dado_testes_correto_e_data_nome_vazios() {
+        this.pageForm.iniciar();
+    }
+
+    @When("Quando o campo teste e preenchido correto")
+    public void quando_o_campo_teste_e_preenchido_correto() {
+        String nome = "";
+        String data = "";
+        String campoTesting = "Por ser uma área incrivel.";
+
+        pageForm.preencherFormulario(nome, data,campoTesting);
+        aguardar(3000);
+
+
+    }
+
 }
