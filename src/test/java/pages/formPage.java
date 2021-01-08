@@ -39,8 +39,11 @@ public class formPage extends PageObject {
         aguardar(2000);
         campoDescricaoTeste.sendKeys(descricaoTeste);
         aguardar(2000);
-        click(xpathCampoData);
-        click(xpathData);
+        if(dataNascimento != ""){
+            click(xpathCampoData);
+            click(xpathData);
+        }
+
         aguardar(2000);
         click(xpathBotao);
 
@@ -56,8 +59,7 @@ public class formPage extends PageObject {
     }
 
 
-    public WebElement buscaMensagemSucesso(String xpath){
-
+    public WebElement buscaMensagem(String xpath){
 
         WebElement mensagemSucesso = browser.findElement(By.xpath(xpath));
 
@@ -65,9 +67,12 @@ public class formPage extends PageObject {
 
     }
 
+    public void clicaBotaoConfirmar(){
+        String xpathBotao = ".//button[@type='submit']";
 
-
-
+        WebElement element = browser.findElement(By.xpath(xpathBotao));
+        element.click();
+    }
 
 
 }
