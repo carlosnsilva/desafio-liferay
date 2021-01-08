@@ -1,0 +1,7 @@
+Documento contendo a aboradgem dos testes manuais.
+
+Seguindo os requisitos no e-mail enviado, para os testes manuais foi feito primeiramente uma análise
+da tela anotando e observando os dados necessários para a realização dos testes, sendo assim, depois da
+análise foi desenhado os fluxos de teste, tanto os de execeção quanto os fluxos "felizes".
+
+Feito isso, foi realizado os testes manuais seguindo os fluxos.

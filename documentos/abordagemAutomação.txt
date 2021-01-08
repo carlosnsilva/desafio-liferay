@@ -1,0 +1,12 @@
+Documento contendo a abordagem da automação
+
+Depois que foi o levantamento dos requisitos necessários para o teste, criação dos fluxos de testes e realização de testes manuais,
+então foi realizada a automação, utilizando os requisitos enviados no e-mail, utilizando: Selenium Web Driver, padrão de projeto PageObject
+e BDD com o Cucumber.
+
+Seguindo os passos:
+    1 - Inicia o Navegador
+    2 - Navega até a página do formulário
+    3 - Preenche o formulário, seguindo os fluxos
+    4 - Valida a ação de envio ou não do formulário(Validações)
+    5 - Encerra o Browser.
