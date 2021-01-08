@@ -9,12 +9,14 @@ public class PageObject {
 
     public PageObject(WebDriver browser){
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
+
         if(browser != null){
             this.browser = browser;
         } else {
             this.browser = new ChromeDriver();
         }
-    }
 
+
+    }
 
 }
