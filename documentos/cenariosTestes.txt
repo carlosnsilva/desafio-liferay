@@ -1,0 +1,43 @@
+Documento contendo os cenários de testes.
+
+Foram pensados e implementados 8 cenários de testes, segue abaixo:
+
+1 - Envio do formulário corretamente.
+    Fluxo: nome->data->testes->enviar.
+
+    Esperado: Mensagem de informação enviada com sucesso
+
+2- Envio do formulário vazio.
+    Fluxo: enviar.
+
+    Esperado: Não deixar enviar o formulário e apresentar mensagem de erro apontando os campos que são obrigatórios que estão vazios
+
+3- Envio de formulário com nome e o restante dos campos vazios
+    Fluxo: Nome -> enviar
+
+    Esperado: Não deixar enviar o formulário e apresentar mensagem de erro apontando os campos que são obrigatórios que estão vazios
+
+4 - Envio de formulário com a data e o restante dos campos vazios.
+    Fluxo: Data -> enviar
+
+    Esperado: Não deixar enviar o formulário e apresentar mensagem de erro apontando os campos que são obrigatórios que estão vazios
+
+5 - Envio de formulário com "testing area" e o restante vazio.
+    Fluxo: testing area -> enviar
+
+    Esperado: Não deixar enviar o formulário e apresentar mensagem de erro apontando os campos que são obrigatórios que estão vazios
+
+6 - Envio de formulário com Nome e Data e o restante vazio.
+    Fluxo: Nome -> Data -> enviar
+
+    Esperado: Não deixar enviar o formulário e apresentar mensagem de erro apontando os campos que são obrigatórios que estão vazios
+
+7 - Envio de formulário com Data e "testing area" e o restante vazio.
+    Fluxo: Data -> Testing Area -> enviar
+
+    Esperado: Não deixar enviar o formulário e apresentar mensagem de erro apontando os campos que são obrigatórios que estão vazios
+
+8 - Envio de formulário com Nome e "Testing Area" e o restante vazio
+    Fluxo: Nome -> Testing Area -> enviar.
+
+    Esperado: Não deixar enviar o formulário e apresentar mensagem de erro apontando os campos que são obrigatórios que estão vazios
